@@ -17,7 +17,9 @@ app.add_middleware(
 
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
-
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to AI-AR Backend!"}
 @app.post("/analyze")
 async def analyze_image(file: UploadFile = File(...)):
     try:
