@@ -8,3 +8,4 @@ pillow
 requests
 mediapipe
 "scikit-learn" 
+scikit-learn 
